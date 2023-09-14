@@ -1,11 +1,11 @@
-from calculators import Calculators
+from it_calculators import ITCalculators
 
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 # Get data
-data = np.load('../data/ds002898/derivatives/denoising/Schaefer2018/sub-01_run-1_atlas-Schaefer2018_200_roi-time-series.npy')
+data = np.load('') # file needed
 
 # 242 rows for timepoints and 200 columns for regions
 regions = 200
@@ -13,7 +13,7 @@ timepoints = 242
 assert data.shape == (timepoints, regions)
 
 # Set up calculators
-cal = Calculators()
+cal = ITCalculators()
 cal.activate()
 
 # MI
