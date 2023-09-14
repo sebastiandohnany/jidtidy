@@ -1,12 +1,12 @@
 import jpype as jp # pipe from java to python
 import numpy as np
 
-class Calculators():
+class ITCalculators():
     """
     Information-theoretic calculators class.
 
     Example usage (for mutual information):
-        cal = Calculators()
+        cal = ITCalculators()
         cal.activate()
         cal.mi_init('Kraskov')
         r = cal.mi_calc(s, t) # just the result
